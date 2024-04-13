@@ -3,7 +3,7 @@ let cols;
 let rows;
 let resolution = 15;
 function changeresolution() {
-    resolution = Math.max(25,(Math.random() * 100));
+    resolution = Math.max(5, (Math.random() * 50));
     setup();
     draw();
 }
@@ -41,7 +41,7 @@ function draw() {
             if (grid[i][j] == 1) {
                 fill(Math.random() * 255, Math.random() * 255, Math.random() * 255);
                 stroke(Math.random() * 255, Math.random() * 255, Math.random() * 255);
-                rect(x, y, resolution - 1,resolution-1);
+                circle(x, y, resolution - 1);
             }
         }
     }
